@@ -9,13 +9,14 @@ function RainEffect() {
 
       setRain((x) => [...x, {
         id: id,
-        x: Math.random() * window.innerWidth
+        x: Math.random() * window.innerWidth,
+        size: Math.random()*2
       }])
 
       setTimeout(() => {
         setRain((x) => x.filter((x) => x.id !== id))
       }, 5000);
-  }, 500 / window.innerWidth * 20);
+  }, 500);
 
   return () => clearInterval(interval);
     
@@ -27,7 +28,8 @@ function RainEffect() {
           setRain((x) => x.filter((x) => x.id !== r.id))
         }}
         style={{
-          left: `${r.x <= 10 ? r.x : r.x-15}px`
+          left: `${r.x <= 10 ? r.x : r.x-15}px`,
+          scale: r.size
         }}>.</span>
       ))}
     </div>

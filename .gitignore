@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/pages/photos-info.json
+src/assets/photos/*.CR2
+src/assets/photos/*.jpg
+src/assets/photos-info.json

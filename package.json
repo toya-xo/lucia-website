@@ -1,6 +1,6 @@
 {
   "name": "lucia-website",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "exifreader": "^4.36.2",
+    "fs": "*",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0",
+    "styled-components": "^6.3.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

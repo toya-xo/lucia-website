@@ -2,13 +2,17 @@
   position: absolute;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.3);
-  top: -10vw;
-  animation: fall 10s ease-in;
+  animation: fall 10s linear forwards;
   font-size: 4vw;
 }
 
 @keyframes fall {
-  to {top: 350%}
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(300vh);
+  }
 }
 
 @media screen and (max-width: 700px) {
