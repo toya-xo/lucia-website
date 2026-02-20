@@ -2,7 +2,7 @@ import './App.css'
 
 function Button({text, link, id, img, additionalHtml}) {
     return (
-        <button className="redirect" id={id} onClick={() => window.location.href = link}>
+        <button className="redirect" id={id} onClick={() => window.open(link, '_blank')}>
             <img src={img ? img : "src/assets/placeholder.jpg"} alt={text} />
             <p>{text}</p>
             {additionalHtml? additionalHtml : null}
@@ -15,8 +15,7 @@ function Links(){
     return (
         <div id="links-container">
             <Button text="Code projects" link="https://github.com/ToyaXop" img="/src/assets/github.png" />
-            <Button text="Photos" link="" img="src/assets/photos.png" additionalHtml={<div id="temp-icon"><a target="_blank" href="https://icons8.com/icon/TUlXgsYn8qIJ/image">Image</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>} />
-            
+            <Button text="Photos (Temp link)" link="https://www.instagram.com/luciaaa.photos/" img="src/assets/photos.png" additionalHtml={<div id="temp-icon"><a target="_blank" href="https://icons8.com/icon/TUlXgsYn8qIJ/image">Image</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>} />
         </div>
     )
 
