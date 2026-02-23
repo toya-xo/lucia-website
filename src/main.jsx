@@ -11,13 +11,13 @@ import Projects from './pages/projects.jsx';
 //import Photos from './pages/photos.jsx'
 
 createRoot(document.getElementById('root')).render(
+  <Router basename='/'>
   <div className="main-container">
     <Effects />
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-    </Router>
   </div>
+  </Router>
 )
