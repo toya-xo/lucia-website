@@ -1,8 +1,10 @@
-import './css/index.css'
+import './css/index.css';
+import { useNavigate } from "react-router-dom"
 
-function Button({text, link, id, img, additionalHtml}) {
+function Button({text, linkW, linkN, id, img, additionalHtml}) {
+    const n = useNavigate();
     return (
-        <button className="redirect" id={id} onClick={() => window.location = link}>
+        <button className="redirect" id={id} onClick={!!linkW ? ()=>n(linkW) : ()=>window.location = linkN}>
             <img src={img ? img : "src/assets/placeholder.jpg"} alt={text} class='icon'/>
             <p>{text}</p>
             {additionalHtml? additionalHtml : null}
@@ -14,8 +16,8 @@ function Button({text, link, id, img, additionalHtml}) {
 function Links(){
     return (
         <div id="links-container" class="buttons">
-            <Button text="Code projects" link="/projects" img="https://www.systemuicons.com/images/icons/paper.svg" />
-            <Button text="Photos (W.I.P.)" link="https://www.instagram.com/luciaaa.photos/" img="https://www.systemuicons.com/images/icons/camera_alt.svg" />
+            <Button text="Code projects" linkW="/projects" img="https://www.systemuicons.com/images/icons/paper.svg" />
+            <Button text="Photos (W.I.P.)" linkN="https://www.instagram.com/luciaaa.photos/" img="https://www.systemuicons.com/images/icons/camera_alt.svg" />
         </div>
     )
 
@@ -40,7 +42,7 @@ function Home() {
     <div className="App">
       <Container />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
