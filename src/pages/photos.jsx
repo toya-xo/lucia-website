@@ -1,5 +1,5 @@
 // W.I.P.
-
+/*
 import './css/photos.css';
 import photos from "../assets/photos-info.json"
 
@@ -39,4 +39,4 @@ function Photos() {
     );
 };
 
-export default Photos;
+export default Photos;*/

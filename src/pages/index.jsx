@@ -14,8 +14,8 @@ function Button({text, link, id, img, additionalHtml}) {
 function Links(){
     return (
         <div id="links-container" class="buttons">
-            <Button text="Code projects" link="/projects" img="/src/assets/github.png" />
-            <Button text="Photos (W.I.P.)" link="/photos" img="src/assets/photos.png" additionalHtml={<div id="temp-icon"><a target="_blank" href="https://icons8.com/icon/TUlXgsYn8qIJ/image">Image</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>} />
+            <Button text="Code projects" link="/projects" img="https://www.systemuicons.com/images/icons/paper.svg" />
+            <Button text="Photos (W.I.P.)" link="https://www.instagram.com/luciaaa.photos/" img="https://www.systemuicons.com/images/icons/camera_alt.svg" />
         </div>
     )
 
@@ -29,7 +29,7 @@ function Container() {
             <p id="description">Hi!<br/>
             I'm Lucia (a.k.a ToyaXo), a swiss girl passionate about coding, 3d, music creation, fashion and photography.<br/>
             I speak french fluently, my level in english is intermediate and I'm currently learning japanese.</p>
-            This page is still a work in progress, I'm planning to add a specific page for my photography and coding projects <br/>=￣ω￣=
+            This page is still a work in progress, I'm planning to add a gallery for my photography<br/>=￣ω￣=
             <Links />
         </div>
     )

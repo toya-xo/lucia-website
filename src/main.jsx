@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/index.jsx'
 import Projects from './pages/projects.jsx';
-import Photos from './pages/photos.jsx'
+//import Photos from './pages/photos.jsx'
 
 createRoot(document.getElementById('root')).render(
   <div className="main-container">
@@ -17,7 +17,6 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/photos" element={<Photos />} />
       </Routes>
     </Router>
   </div>
