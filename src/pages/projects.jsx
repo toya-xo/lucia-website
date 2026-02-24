@@ -75,6 +75,15 @@ function Projects() {
         <div className="container">
             <button className='redirect' onClick={(() => window.location = "/")}>Go back to homepage</button>
             <h1 className="title">Projects</h1>
+                <h3>Languages/Tools:</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3"/>
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5"/>
+                    <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" alt="Java"/>
+                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=white" alt="JavaScript"/>
+                    <img src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&amp;logo=lua&amp;logoColor=white" alt="Lua"/>
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python" />
+                </p>
             <div className="buttons">
                 {project.map((project, index) => (
                     <Button
