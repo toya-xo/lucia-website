@@ -1,15 +1,11 @@
-// W.I.P.
-/*
 import './css/photos.css';
 import photos from "../assets/photos-info.json"
 
-const photosLoc = "../assets/photos/"
-function Button({text, img, date, }) {
+const photosLoc = "./src/assets/photos/"
+function Button({text, img, date, rotation}) {
     return (
-        <button className="photo-gallery" onClick={() => console.log("Not done yet")}>
-            <img src={img ? img : ""} alt={text} />
-            <p>{text}</p>
-            
+        <button className={`photo-gallery ${rotation}`} onClick={() => console.log("Not done yet")}>
+            <img className="photo" src={img ? img : ""} alt={text} />
         </button>
     );
 }
@@ -22,6 +18,8 @@ function Gallery(){
                     key={p.name} 
                     text={p.name} 
                     img={photosLoc+p.name}
+                    date={p.date}
+                    rotation={p.rotation}
                 />
             ))}
         </div>
@@ -31,12 +29,14 @@ function Gallery(){
 
 function Photos() {  
     return (
-        <div className="container">
+        <div className="container-2">
             <button className='redirect' onClick={(() => window.location = "/")}>Go back to homepage</button>
             <h1 className="title">Photos</h1>
-            <Gallery />
+            <div id="gallery">
+                <Gallery />
+            </div>
         </div>
     );
 };
 
-export default Photos;*/
+export default Photos;

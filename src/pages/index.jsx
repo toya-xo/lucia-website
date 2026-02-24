@@ -17,7 +17,7 @@ function Links(){
     return (
         <div id="links-container" class="buttons">
             <Button text="Code projects" linkW="/projects" img="https://www.systemuicons.com/images/icons/paper.svg" />
-            <Button text="Photos (W.I.P.)" linkN="https://www.instagram.com/luciaaa.photos/" img="https://www.systemuicons.com/images/icons/camera_alt.svg" />
+            <Button text="Photos" linkW="/photos" img="https://www.systemuicons.com/images/icons/camera_alt.svg" />
         </div>
     )
 
