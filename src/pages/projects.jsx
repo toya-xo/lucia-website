@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 const discontinuedColor = "#ff0000";
 const inDevelopmentColor = "#00ff00";
+const maintainedColor = "#ff8800";
 const completedColor = "#818181";
 
 async function getLastUpdateDate(author, projectName) {
@@ -46,8 +47,8 @@ function Projects() {
         projectName: "InventorySwap",
         img: "https://media.forgecdn.net/avatars/thumbnails/867/758/64/64/638281453011937215.png",
         date: null,
-        state: "Discontinued",
-        stateColor: discontinuedColor
+        state: "Maintained",
+        stateColor: maintainedColor
     }
     ];
 
