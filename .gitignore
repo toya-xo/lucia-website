@@ -25,4 +25,7 @@ dist-ssr
 src/pages/photos-info.json
 src/assets/photos/*.CR2
 src/assets/photos/*.jpg
+src/assets/photos/*.fuse*
+src/assets/photos/compressed
 src/assets/photos-exif-debug.json
+src/assets/photos-info.json
